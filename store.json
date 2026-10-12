@@ -1,5 +1,55 @@
 {
-  "built": "2026-10-12T04:52:44.295Z",
+  "built": "2026-10-12T04:52:45.891Z",
   "repo": "vlad-terin/jevie-extensions",
-  "extensions": []
+  "extensions": [
+    {
+      "id": "github-trending-repos",
+      "title": "GitHub Trending",
+      "description": "GitHub's trending repositories, today, this week or this month - ranked for your project when you name its folder, with what it already uses left out.",
+      "version": "1.1.0",
+      "categories": [
+        "Developer Tools",
+        "News"
+      ],
+      "icon": "star",
+      "author": "vlad-terin",
+      "requires": null,
+      "topics": [
+        "trending repos",
+        "github trending"
+      ],
+      "examples": [
+        "trending repos",
+        "trending repos weekly",
+        "github trending swift"
+      ],
+      "settings": 1,
+      "changes": null,
+      "reaches": {
+        "hosts": [
+          "api.github.com",
+          "github.com",
+          "raw.githubusercontent.com"
+        ],
+        "programs": [],
+        "writes": 0
+      },
+      "readme": "# GitHub Trending\n\nGitHub's trending repositories (today, this week or this month), as cards\nwith each repository's README beside them. Name your project and the list is\nranked for it, without what it already uses.\n\n## Say\n\n- “trending repos”: today's\n- “trending repos weekly”, “trending repos monthly”\n- “github trending swift”: one language\n- “trending repos all”: everything, including what was left out\n\n## Ranked for your project\n\nSet your project's folder with **settings for github trending**. Its\n`package.json` keywords and description become the terms a repository is\nscored by. Its language comes from the files it has (`tsconfig.json`,\n`Package.swift`, `pyproject.toml`, `Cargo.toml`, `go.mod`). Its dependencies\nare left out as already used. Archived repositories, ones with no licence, and\nones not pushed to in 90 days are left out too. \"trending repos all\" shows\nthem anyway.\n\nFor finer control, write `~/.jevie/trending-terms.json`. It wins over\neverything and never leaves your Mac:\n\n```json\n{\n  \"project\": \"my app\",\n  \"minScore\": 5,\n  \"terms\": { \"browser automation\": 6, \"mcp\": 6, \"crypto\": -3 },\n  \"languages\": { \"TypeScript\": 2, \"Swift\": 2 },\n  \"uses\": [\"microsoft/playwright\"],\n  \"avoid\": [\"captcha\"],\n  \"staleDays\": 90\n}\n```\n\nA term matches whole words in a repository's name and description, with\nhyphens, slashes and dots counted as spaces. A negative weight pushes a\nsubject down. With no terms at all, the list is GitHub's own.\n\nThe order is always GitHub's. The fit only decides what is shown.\n\n## Reaches\n\ngithub.com (the trending page), api.github.com (archived, licence, last push;\n`GITHUB_TOKEN` is used when set), raw.githubusercontent.com (READMEs). It\nchanges nothing.\n",
+      "change": {
+        "version": "1.1.0",
+        "date": "2026-10-12",
+        "lines": [
+          "Ranked for any project: its folder is a setting, and its package.json says what it is about.",
+          "Your own weights in ~/.jevie/trending-terms.json, kept on your Mac.",
+          "With no project, GitHub's trending list as it is."
+        ]
+      },
+      "source": "git:github.com/vlad-terin/jevie-extensions@546d8b441ed2320978b331e64ed4abbeee8b80f2#github-trending-repos",
+      "repo": "github.com/vlad-terin/jevie-extensions",
+      "folder": "github-trending-repos",
+      "released": "github-trending-repos-v1.1.0",
+      "commit": "546d8b441ed2320978b331e64ed4abbeee8b80f2",
+      "trust": "tap"
+    }
+  ]
 }
