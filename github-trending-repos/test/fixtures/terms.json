@@ -1,0 +1,8 @@
+{
+  "minScore": 5,
+  "terms": { "browser use": 6, "browser": 2, "agents": 2, "mcp server": 6, "mcp": 6, "raycast": 6, "crypto": -3, "trading": -2 },
+  "languages": { "Swift": 2, "Python": 1 },
+  "uses": [],
+  "avoid": ["stealth"],
+  "staleDays": 90
+}

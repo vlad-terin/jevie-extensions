@@ -1,0 +1,32 @@
+{
+  "id": "github-trending-repos",
+  "apiVersion": 2,
+  "version": "1.1.0",
+  "description": "GitHub's trending repositories, today, this week or this month - ranked for your project when you name its folder, with what it already uses left out.",
+  "entry": "index.mjs",
+  "topics": [
+    "trending repos",
+    "github trending"
+  ],
+  "examples": [
+    "trending repos",
+    "trending repos weekly",
+    "github trending swift"
+  ],
+  "title": "GitHub Trending",
+  "categories": [
+    "Developer Tools",
+    "News"
+  ],
+  "icon": "star",
+  "author": "vlad-terin",
+  "preferences": [
+    {
+      "name": "folder",
+      "title": "Project folder",
+      "type": "text",
+      "default": "",
+      "description": "Ranks trending repos by what this project is about (its package.json keywords and description) and leaves out what it already depends on. Empty: plain trending."
+    }
+  ]
+}

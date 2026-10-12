@@ -1,0 +1,18 @@
+{
+  "about": "Defaults. Your own weights go in ~/.jevie/trending-terms.json (same shape; it wins and never leaves your Mac). With a project folder set (\"settings for github trending\"), its package.json keywords, description and dependencies are read too.",
+  "minScore": 0,
+  "terms": {},
+  "languages": {},
+  "uses": [],
+  "avoid": [
+    "stealth",
+    "bypass cloudflare",
+    "bot detection",
+    "anti bot",
+    "anti scraping",
+    "captcha",
+    "undetectable",
+    "detection evasion"
+  ],
+  "staleDays": 90
+}
