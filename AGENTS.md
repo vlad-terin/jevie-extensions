@@ -3,7 +3,8 @@
 This repository holds Jevie extensions, one per folder, released by tags.
 Jevie maintains it; work with it the way Jevie does.
 
-- **Layout.** `<id>/jevie-extension.json`, `<id>/index.mjs`, `<id>/README.md`,
+- **Layout.** `cards/*.json` are single shared cards, written by Jevie: leave
+  them. `<id>/jevie-extension.json`, `<id>/index.mjs`, `<id>/README.md`,
   `<id>/CHANGELOG.md`. `store.json` lists each extension at its release tag
   and is written by Jevie: do not edit it by hand.
 - **Changing an extension.** Change the files in `<id>/`, raise `version` in

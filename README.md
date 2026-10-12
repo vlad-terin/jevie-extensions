@@ -10,6 +10,12 @@ Each folder is one extension; each release is a tag (`<id>-v1.2.0`).
 - add this whole repository as a source: **add extensions from vlad-terin/jevie-extensions**.
   Its extensions then show in `extensions` next to the store's.
 
+## Cards
+
+`cards/` holds single cards shared from Jevie ("share the last card"):
+each file is a card's words and what it showed. The store's page draws one
+from its link, and "Open in Jevie" types the words.
+
 ## Change one
 
 Say **fork the <name> extension** in Jevie, change it, and say **send my
